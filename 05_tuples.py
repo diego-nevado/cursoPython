@@ -21,4 +21,19 @@ print(my_tuple.index("Diego"))
 my_sum_tuple = my_tuple + my_other_tuple
 print(my_sum_tuple)
 
-print()
+print(my_sum_tuple[3:6])
+
+my_tuple = list(my_tuple)
+print(type(my_tuple))
+
+my_tuple[4] = "NevaByte"
+my_tuple.insert(1, "Azul")
+my_tuple = tuple(my_tuple)
+print(my_tuple)
+print(tuple(my_tuple))
+
+#del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
+
+del my_tuple
+# print(my_tuple) NameError: name 'my_tuple' is not defined
+
